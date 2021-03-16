@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import { createStore } from 'redux';
+import { combineReducers, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './Reducers';
+
+// import DiceReducer from './DiceReducer';
 
 
 // const initialState = {list:[], total:0};
@@ -14,6 +16,8 @@ import reducer from './Reducers';
 // });
 
 // const store = createStore(reducer, initialState);
+// const rootReducer = combineReducers({DiceReducer});
+// const store = createStore(rootReducer);
 
 const store = createStore(reducer);
 

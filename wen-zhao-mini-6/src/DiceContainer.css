@@ -1,0 +1,9 @@
+#DiceContainer {
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: fit-content;
+    left:50%;
+    transform: translate(-50%, 0);
+
+}

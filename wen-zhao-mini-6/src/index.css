@@ -1,18 +1,1 @@
-#container {
-    display: flex;
-    /* grid-template-columns: auto auto; */
-    flex-direction: row-reverse;
-    margin-top: 80px;
-    margin-left:45%;
-    width: fit-content;
-    height: fit-content;
 
-  }
-
-  #square {
-    width: 100px;
-    height: 100px;
-    border: grey 1px solid;
-    content: '';
-
-  }

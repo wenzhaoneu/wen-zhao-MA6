@@ -1,12 +1,12 @@
 import React from 'react';
-// import './Dice.css'
+import './Dice.css'
 
 export default class Dice extends React.Component {
     render(){
         return (
-            <div>
+            <span id="Dice">
                 {this.props.value}
-            </div>
+            </span>
         )
     }
 }
