@@ -19,7 +19,6 @@ import "./App.css";
                 <button onClick={()=>this.handleChange("CLEAR_DICE")}>Clean Dice</button>
                 </div>
                 <h2 className="tittle">Sum: {this.props.total}</h2>
-
                 <DiceContainer diceList={this.props.dices}></DiceContainer>
             </div>
         )
