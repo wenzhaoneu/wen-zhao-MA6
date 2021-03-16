@@ -18,7 +18,7 @@ import "./App.css";
                 <button onClick={()=>this.handleChange("ROLL_DICE")}>Roll Dice</button>
                 <button onClick={()=>this.handleChange("CLEAR_DICE")}>Clean Dice</button>
                 </div>
-                <h2 className="tittle">Sum: {this.props.total}</h2>
+                <h1 className="tittle">Sum: {this.props.total}</h1>
                 <DiceContainer diceList={this.props.dices}></DiceContainer>
             </div>
         )
