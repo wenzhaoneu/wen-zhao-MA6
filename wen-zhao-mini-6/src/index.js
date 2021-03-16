@@ -1,28 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.js';
+import App from './App';
 import './index.css';
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './Reducers';
- 
 
-const initialState = {list:[], total:0, isEmpty:true};
+
+// const initialState = {list:[], total:0};
 
 // const reducer = combineReducers({
 //     RollReducer
 // });
 
-const store = createStore(reducer, initialState);
+// const store = createStore(reducer, initialState);
 
-function renderPage() {
-    ReactDOM.render(<App store={store}/>, document.getElementById('root'));
-}
-renderPage();
+const store = createStore(reducer);
 
-store.subscribe(renderPage)
+// function renderPage() {
+//     ReactDOM.render(<App store={store}/>, document.getElementById('root'));
+// }
+// renderPage();
 
-// ReactDOM.render(
-//     <Provider store={store}>
-//         <App />
-//     </Provider>, document.getElementById('root'));
+// store.subscribe(renderPage)
+
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>, document.getElementById('root'));
